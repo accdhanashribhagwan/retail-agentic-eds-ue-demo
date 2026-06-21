@@ -1,3 +1,5 @@
+import { moveInstrumentation } from '../../scripts/scripts.js';
+
 export default async function decorate(block) {
   const rows = [...block.children];
   const list = document.createElement('ul');
@@ -7,8 +9,8 @@ export default async function decorate(block) {
     const cells = [...row.children];
     const li = document.createElement('li');
     li.classList.add('hero-links-item');
+    moveInstrumentation(row, li);
 
-    // Cell 0: icon image (authored as an image reference)
     const iconCell = cells[0];
     if (iconCell) {
       const iconWrapper = document.createElement('span');
@@ -17,7 +19,6 @@ export default async function decorate(block) {
       li.append(iconWrapper);
     }
 
-    // Cell 1: label text or link
     const labelCell = cells[1];
     if (labelCell) {
       const label = document.createElement('span');
