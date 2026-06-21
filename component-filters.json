@@ -13,6 +13,7 @@
       "button",
       "title",
       "hero",
+      "hero-links",
       "cards",
       "columns",
       "fragment"
@@ -37,6 +38,18 @@
       "image",
       "button",
       "title"
+    ]
+  },
+  {
+    "id": "hero-links",
+    "components": [
+      "hero-link-item"
+    ]
+  },
+  {
+    "id": "hero",
+    "components": [
+      "button"
     ]
   }
 ]
