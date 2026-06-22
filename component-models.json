@@ -84,37 +84,35 @@
     "id": "button",
     "fields": [
       {
-        "component": "text",
+        "component": "aem-content",
         "name": "link",
-        "label": "Link",
-        "description": "Enter URL (e.g., /pages/customize)"
+        "label": "Link"
       },
       {
         "component": "text",
         "name": "linkText",
-        "label": "Button Text",
-        "value": "Customize now"
+        "label": "Text"
       },
       {
         "component": "text",
         "name": "linkTitle",
-        "label": "Tooltip"
+        "label": "Title"
       },
       {
         "component": "select",
         "name": "linkType",
-        "label": "Style",
+        "label": "Type",
         "options": [
           {
             "name": "default",
             "value": ""
           },
           {
-            "name": "primary (blue)",
+            "name": "primary",
             "value": "primary"
           },
           {
-            "name": "secondary (outline)",
+            "name": "secondary",
             "value": "secondary"
           }
         ]
@@ -237,6 +235,17 @@
         "value": "",
         "label": "Text",
         "valueType": "string"
+      },
+      {
+        "component": "aem-content",
+        "name": "link",
+        "label": "Button Link"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "linkText",
+        "label": "Button Text"
       }
     ]
   }
