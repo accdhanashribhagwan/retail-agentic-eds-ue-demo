@@ -84,35 +84,33 @@
     "id": "button",
     "fields": [
       {
-        "component": "aem-content",
+        "component": "text",
         "name": "link",
-        "label": "Link"
+        "label": "Link",
+        "description": "Enter URL (e.g., /pages/customize)"
       },
       {
         "component": "text",
         "name": "linkText",
-        "label": "Text"
+        "label": "Button Text",
+        "value": "Customize now"
       },
       {
         "component": "text",
         "name": "linkTitle",
-        "label": "Title"
+        "label": "Tooltip"
       },
       {
         "component": "select",
         "name": "linkType",
-        "label": "Type",
+        "label": "Style",
         "options": [
           {
-            "name": "default",
-            "value": ""
-          },
-          {
-            "name": "primary",
+            "name": "primary (blue)",
             "value": "primary"
           },
           {
-            "name": "secondary",
+            "name": "secondary (outline)",
             "value": "secondary"
           }
         ]
@@ -266,5 +264,9 @@
         ]
       }
     ]
+  },
+  {
+    "id": "button-styling",
+    "css": "/* Button styling for hero components */\n.hero .button,\nbutton[class*=\"customize\"],\na.button {\n  background-color: #0078D4;\n  color: white;\n  padding: 12px 32px;\n  border-radius: 24px;\n  font-weight: 600;\n  font-size: 16px;\n  border: none;\n  cursor: pointer;\n  text-decoration: none;\n  display: inline-block;\n  transition: background-color 0.3s ease;\n  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;\n}\n\n.hero .button:hover,\nbutton[class*=\"customize\"]:hover,\na.button:hover {\n  background-color: #106EBE;\n}\n\n/* For secondary button variant */\n.button.secondary {\n  background-color: transparent;\n  color: #0078D4;\n  border: 2px solid #0078D4;\n}\n\n.button.secondary:hover {\n  background-color: #F0F8FF;\n}"
   }
 ]
